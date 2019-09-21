@@ -4,9 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shirley's github page</title>
+    <title>Shirley W.</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Welcome to Shirley's github page</h1>
+    <header>
+        <h1>Surely it's Shirley</h1>
+        <p>Front-end Web Developer</p>
+        <p>email</p>
+        <p>github</p>
+        <p>linkedin</p>
+        <p>call</p>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Something about me</p>
+        </section>
+        <section class="works">
+            <h2>My work</h2>
+            <nav>
+                <ul class="button-group filters-button-group">
+                    <li><button class="button is-checked" data-filter="*">View all</button></li>
+                    <li><button class="button" data-filter=".react">React</button></li>
+                    <li><button class="button" data-filter=".jquery">JQuery</button></li>
+                    <li><button class="button" data-filter=".psd">HTML/CSS</button></li>
+                </ul>
+            </nav>
+            <div class="gallery">
+                <ul class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+                    <li class="grid-item jquery" data-category="jquery">
+                        <a href="">
+                            <img src="styles/assets/jquery-globe-trotter.png" alt="">
+                        </a>
+                    </li>
+                    <li class="grid-item react" data-category="react">
+                        <a href="">
+                            <img src="styles/assets/react-lukewarm-map.png" alt="">
+                        </a>
+                    </li>
+                    <li class="grid-item react" data-category="react">
+                        <a href="">
+                            <img src="styles/assets/react-ntcr.png" alt="">
+                        </a>
+                    </li>
+                    <li class="grid-item jquery" data-category="jquery">
+                        <a href="">
+                            <img src="styles/assets/jquery-tic-tac-toe.png" alt="">
+                        </a>
+                    </li>
+                    <li class="grid-item psd" data-category="psd">
+                        <a href="">
+                            <img src="styles/assets/psd-boat.png" alt="">
+                        </a>
+                    </li>
+                    <li class="grid-item psd" data-category="psd">
+                        <a href="">
+                            <img src="styles/assets/psd-electric.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="skills">
+            <h2>Skill set</h2>
+            <div class="skills-icons grid">
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/react.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>react</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/firebase.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>firebase</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/javascript.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>javascript</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/jquery.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>jquery</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/html5.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>html</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/css3.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>css</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/sass.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>scss</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/responsive.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>responsive</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/accessibility.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>accessibility</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/github.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>github</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/bar-chart.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>SEO</p>
+                    </figcaption>
+                </div>
+                <div class="icon">
+                    <figure>
+                        <img src="/styles/assets/wordpress.svg" alt="">
+                    </figure>
+                    <figcaption>
+                        <p>wordpress</p>
+                    </figcaption>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact me</h2>
+            <form action=""></form>
+        </section>
+    </main>
+    <script src="/scripts/isotope.pkgd.min.js"></script>
+    <script src="/scripts/aos.js"></script>
+    <script src="/scripts/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+@import './components/setup';
+
+.grid {
+    display: grid;
+}
+
+.grid-item, .icon {
+    width: 25%;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+figure {
+    width: 100px;
+    height: auto;
+}
+.skills-icons {
+    
+}
