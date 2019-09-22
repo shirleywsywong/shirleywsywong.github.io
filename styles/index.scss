@@ -1,24 +1,21 @@
 @import './components/setup';
-
-.grid {
-    display: grid;
+@import './components/global';
+@import './components/header';
+// body {
+//     position: relative;
+// }
+.about {
+    text-align: center;
 }
-
 .grid-item, .icon {
     width: 25%;
 }
 
-img {
-    max-width: 100%;
-}
-
-li {
-    list-style-type: none;
-}
 figure {
     width: 100px;
     height: auto;
 }
 .skills-icons {
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
