@@ -13,8 +13,6 @@ header {
     position: relative;
 }
 
-
-
 .top-header {
     height: 5vh;
     width: 100vw;
@@ -48,12 +46,19 @@ header {
         color: $indigo;
         display: inherit;
         transform: all 0.2s linear;
+        &::after {
+            content: '';
+            display: block;
+            width: 120%;
+            height: 3px;
+            background-color:transparent;
+        }
         &:hover::after {
             content: '';
             display: block;
             width: 120%;
             height: 3px;
-            background-color:$red;
+            background-color:$teal;
         }
     }
 }
@@ -61,6 +66,6 @@ header {
     position: fixed;
     top: 0;
     z-index: 900;
-    background: orange;
+    background: $peach;
     width: 100vw;
 }

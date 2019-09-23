@@ -179,6 +179,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+/*Even smaller*/
 body {
   margin: 0;
   padding: 0;
@@ -288,19 +292,27 @@ header {
           transform: all 0.2s linear;
 }
 
+.cta a::after {
+  content: '';
+  display: block;
+  width: 120%;
+  height: 3px;
+  background-color: transparent;
+}
+
 .cta a:hover::after {
   content: '';
   display: block;
   width: 120%;
   height: 3px;
-  background-color: #fd3617;
+  background-color: #038f9e;
 }
 
 .fix {
   position: fixed;
   top: 0;
   z-index: 900;
-  background: orange;
+  background: #faa967;
   width: 100vw;
 }
 
@@ -317,6 +329,11 @@ header {
   border: 0;
   background: white;
   padding: 20px;
+}
+
+.button-group button:hover {
+  font-weight: 700;
+  color: #038f9e;
 }
 
 .is-checked {
@@ -348,6 +365,18 @@ header {
           justify-content: space-evenly;
 }
 
+.gallery-item .links a {
+  color: #002053;
+  width: 80px;
+  border: #ff6d2f 2px solid;
+  background: #ffe6b7;
+  text-align: center;
+}
+
+.gallery-item .links a:hover {
+  background: #faa967;
+}
+
 .img-overlay {
   color: #ffe6b7;
   padding: 10px;
@@ -355,7 +384,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 43px);
+  height: calc(100% - 46px);
   background: -webkit-gradient(linear, left top, left bottom, from(#002053ff), to(#002053dd));
   background: linear-gradient(180deg, #002053ff, #002053dd);
   opacity: 1;

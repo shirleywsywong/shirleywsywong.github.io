@@ -18,6 +18,20 @@ $indigo: #002053;
     font-size: $size;
     color: $color;
 }
+/* Portrait tablet and small desktops */
+@media (max-width: 940px){}
+/* Landscape phone to portrait tablet */
+@mixin max768 {
+    @media (max-width: 768px){@content};
+}
+/* Landscape phones and down */
+@mixin max480 {
+    @media (max-width: 480px){@content};
+}
+/*Even smaller*/
+@mixin max320 {
+    @media(max-width: 320px){};
+}
 
 body {
     margin: 0;
