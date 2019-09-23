@@ -1,6 +1,39 @@
+// $coral: #FF7F50;
+// $orange: #FFA500;
+// $lemonade: #EEE3AB;
+// $turquoise: #55D6BE;
+// $dark-blue: #0B3954;
+
+$red: #fd3617;
+$orange: #ff6d2f;
+$peach: #faa967;
+$beige: #ffe6b7;
+$turquoise: #75b3a8;
+$teal: #038f9e;
+$denim: #016f94;
+$indigo: #002053;
+
+@mixin heading ($size, $color) {
+    font-family: 'Comfortaa', cursive;
+    font-size: $size;
+    color: $color;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-size: 150%;
+    font-family: 'Dosis', sans-serif;
+}
+section {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    // padding-left: 200px;
+}
+h2 {
+    @include heading(3rem, $indigo);
+    text-align: center;
 }
 .grid {
     display: grid;
@@ -9,7 +42,12 @@ body {
 img {
     max-width: 100%;
 }
-
+ul {
+    padding-left: 0;
+}
 li {
     list-style-type: none;
+}
+a {
+    text-decoration: none;
 }

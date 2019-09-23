@@ -1,13 +1,19 @@
 header {
-    height: 50vw;
+    height: 100vw;
     max-height: 500px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     // padding: 0 200px;
-    background-image: linear-gradient(coral, orange) ;
+    // background-image: linear-gradient($orange, $peach, $beige, $turquoise, $teal, $denim) ;
+    background-image: url(../styles/assets/header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
+
+
+
 .top-header {
     height: 5vh;
     width: 100vw;
@@ -17,15 +23,37 @@ header {
     padding: 0 200px;
 }
 .header-content {
-    padding: 0 200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    h1 {
+        margin: 0;
+        color: white;
+        @include heading (3rem, $indigo);
+    }
+    p {
+        font-size: 3rem;
+    }
 }
 .cta {
-    padding: 0 200px;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
     position: absolute;
     top: 300px;
     display: flex;
-    p {
-        padding-right: 20px;
+    justify-content: center;
+    a {
+        padding: 20px;
+        color: $indigo;
+        display: inherit;
+        transform: all 0.2s linear;
+        &:hover::after {
+            content: '';
+            display: block;
+            width: 120%;
+            height: 3px;
+            background-color:$red;
+        }
     }
 }
 .fix {
