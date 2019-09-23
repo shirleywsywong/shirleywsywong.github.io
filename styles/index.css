@@ -236,6 +236,7 @@ header {
   background-image: url(../styles/assets/header.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -303,10 +304,6 @@ header {
   width: 100vw;
 }
 
-.grid-item, .icon {
-  width: 25%;
-}
-
 .button-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,26 +324,47 @@ header {
   color: #038f9e;
 }
 
-.grid-item img {
-  -webkit-filter: grayscale(60%);
-          filter: grayscale(60%);
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery-item {
+  width: calc((100% / 3) - 20px);
+  margin: 10px;
+}
+
+.gallery-item .links {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .img-overlay {
+  color: #ffe6b7;
+  padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002053cc), to(#002053cc));
-  background: linear-gradient(180deg, #002053cc, #002053cc);
-  opacity: 0;
+  height: calc(100% - 43px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#002053ff), to(#002053dd));
+  background: linear-gradient(180deg, #002053ff, #002053dd);
+  opacity: 1;
   -webkit-transition: opacity .2s linear;
   transition: opacity .2s linear;
 }
 
 .img-overlay:hover {
-  opacity: 1;
+  opacity: 0;
 }
 
 figure {
@@ -363,6 +381,7 @@ figure {
 }
 
 .icon {
+  width: 25%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
