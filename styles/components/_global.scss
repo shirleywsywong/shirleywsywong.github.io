@@ -4,22 +4,30 @@
 // $turquoise: #55D6BE;
 // $dark-blue: #0B3954;
 
-$red: #fd3617;
-$orange: #ff6d2f;
-$peach: #faa967;
-$beige: #ffe6b7;
-$turquoise: #75b3a8;
-$teal: #038f9e;
-$denim: #016f94;
-$indigo: #002053;
+// $red: #fd3617;
+// $orange: #ff6d2f;
+// $peach: #faa967;
+// $beige: #ffe6b7;
+// $turquoise: #75b3a8;
+// $teal: #038f9e;
+// $denim: #016f94;
+// $indigo: #002053;
+
+$indigo: #3B3B6D;
+$dark-blue: #444484;
+$blue: #595FAE;
+$purple: #8F80DF;
+$white: #FAFAFF;
 
 @mixin heading ($size, $color) {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Poiret One', cursive;
     font-size: $size;
     color: $color;
 }
 /* Portrait tablet and small desktops */
-@media (max-width: 940px){}
+@mixin max940 {
+    @media (max-width: 940px){@content};
+}
 /* Landscape phone to portrait tablet */
 @mixin max768 {
     @media (max-width: 768px){@content};
@@ -30,23 +38,32 @@ $indigo: #002053;
 }
 /*Even smaller*/
 @mixin max320 {
-    @media(max-width: 320px){};
+    @media(max-width: 320px){@content};
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-size: 150%;
+    font-size: 115%;
     font-family: 'Dosis', sans-serif;
 }
-section {
+.wrapper {
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
-    // padding-left: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include max940 {
+        width: 85%;
+    }
+    @include max768 {
+        width: 90%;
+    }
 }
 h2 {
-    @include heading(3rem, $indigo);
+    margin: 0;
+    font-size: 3rem;
+    color: $indigo;
     text-align: center;
 }
 .grid {

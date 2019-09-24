@@ -1,6 +1,6 @@
 header {
-    height: 100vw;
-    max-height: 500px;
+    height: 120vw;
+    max-height: 600px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -26,11 +26,12 @@ header {
     margin: 0 auto;
     h1 {
         margin: 0;
-        color: white;
-        @include heading (3rem, $indigo);
+        font-weight: 700;
+        @include heading (5rem, $white);
     }
     p {
         font-size: 3rem;
+        color: $white;
     }
 }
 .cta {
@@ -38,12 +39,12 @@ header {
     margin: 0;
     width: 100%;
     position: absolute;
-    top: 300px;
+    top: 400px;
     display: flex;
     justify-content: center;
     a {
         padding: 20px;
-        color: $indigo;
+        color: $white;
         display: inherit;
         transform: all 0.2s linear;
         &::after {
@@ -58,7 +59,7 @@ header {
             display: block;
             width: 120%;
             height: 3px;
-            background-color:$teal;
+            background-color:$indigo;
         }
     }
 }
@@ -66,6 +67,6 @@ header {
     position: fixed;
     top: 0;
     z-index: 900;
-    background: $peach;
-    width: 100vw;
+    background: $blue;
+    padding: 0px;
 }

@@ -1,6 +1,6 @@
 document.getElementById("root").onscroll = function() {fix()};
 function fix() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 450) {
         // document.getElementById("cta").className = "test";
         document.getElementById("cta").classList.add("fix");
 

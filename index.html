@@ -8,6 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Comfortaa|Dosis|Playfair+Display+SC|Source+Sans+Pro&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Arima+Madurai|Baumans|Concert+One|Forum|Fredoka+One|Lobster+Two|Overlock|Poiret+One|Prosto+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="styles/index.css">
 </head>
@@ -30,108 +33,178 @@
     </header>
     <main>
         <section class="works">
-            <h2>My work</h2>
-            <nav>
-                <ul class="button-group filters-button-group">
-                    <li><button class="button is-checked" data-filter="*">View all</button></li>
-                    <li><button class="button" data-filter=".react">React</button></li>
-                    <li><button class="button" data-filter=".jquery">JQuery</button></li>
-                    <li><button class="button" data-filter=".psd">HTML/CSS</button></li>
-                </ul>
-            </nav>
-            <div class="gallery-section">
-                <ul class="gallery" data-isotope='{ "itemSelector": ".gallery-item", "layoutMode": "fitRows" }'>
-                    <li class="gallery-item jquery" data-category="jquery">
-                            <img src="styles/assets/jquery-globe-trotter.png" alt="">
-                        <div class="img-overlay">
-                            <p>Explore the world with Globe Trotter App</p>
-                            <p>jQuery, API, pair-programming</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/Shan-Diego-2019/shirley-diego-project-4" target="_blank">Github</a>
-                            <a href="https://shan-diego-2019.github.io/shirley-diego-project-4/" target="_blank">Live</a>
-                        </div>
-                    </li>
-                    <li class="gallery-item react" data-category="react">
-                        <a href="">
-                            <img src="styles/assets/react-lukewarm-map.png" alt="">
-                        </a>
-                        <div class="img-overlay">
-                            <p>Want to see how users interact with a webpage?</p>
-                            <p>React, Firebase</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/shirleywsywong/shirley-wong-project-5" target="_blank">Github</a>
-                            <a href="https://shirleywsywong.github.io/shirley-wong-project-5/" target="_blank">Live</a>
-                        </div>
-                    </li>
-                    <li class="gallery-item react" data-category="react">
-                        <a href="">
-                            <img src="styles/assets/react-ntcr.png" alt="">
-                        </a>
-                        <div class="img-overlay">
-                            <p>Replicating my favorite cat shelter's website</p>
-                            <p>React, API</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/shirleywsywong/javascript-project-2" target="_blank">Github</a>
-                            <a href="https://shirleywsywong.github.io/javascript-project-2/" target="_blank">Live</a>
-                        </div>
-                    </li>
-                    <li class="gallery-item jquery" data-category="jquery">
-                        <a href="">
-                            <img src="styles/assets/jquery-tic-tac-toe.png" alt="">
-                        </a>
-                        <div class="img-overlay">
-                            <p>An exercise in programming logic and chaining events</p>
-                            <p>jQuery</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/shirleywsywong/ShirleWongProjectThree" target="_blank">Github</a>
-                            <a href="https://shirleywsywong.github.io/ShirleWongProjectThree/" target="_blank">Live</a>
-                        </div>
-                    </li>
-                    <li class="gallery-item psd" data-category="psd">
-                        <a href="">
-                            <img src="styles/assets/psd-boat.png" alt="">
-                        </a>
-                        <div class="img-overlay">
-                            <p>Mobile first approach for a single page PSD conversion</p>
-                            <p>HTML5, CSS3</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/shirleywsywong/shirley-wong-project-1" target="_blank">Github</a>
-                            <a href="https://shirleywsywong.github.io/shirley-wong-project-1/index.html" target="_blank">Live</a>
-                        </div>
-                    </li>
-                    <li class="gallery-item psd" data-category="psd">
-                        <a href="">
-                            <img src="styles/assets/psd-electric.png" alt="">
-                        </a>
-                        <div class="img-overlay">
-                            <p>3 page PSD conversion with mobile first approach</p>
-                            <p>HTML5, CSS3</p>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/shirleywsywong/shirley-wong-project-2" target="_blank">Github</a>
-                            <a href="https://shirleywsywong.github.io/shirley-wong-project-2/" target="_blank">Live</a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="wrapper">
+                <h2>Projects</h2>
+                <div class="gallery-section">
+                    <ul class="gallery">
+                        <li class="gallery-item jquery" data-category="jquery">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/jquery-globe-trotter.png" alt="Explore the world with Globe Trotter App.">
+                                    <div class="img-overlay">
+                                        <p>Explore the world with Globe Trotter App and find out everything you need to know about your next getaway.</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>Globe Trotter</p>
+                                    <p>jQuery, API, pair-programming</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>Explore the world with Globe Trotter App and find out everything you need to know about your next getaway.</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/Shan-Diego-2019/shirley-diego-project-4" target="_blank">
+                                        <img src="/styles/assets/github.svg" alt="View code on Github.">
+                                    </a>
+                                    <a href="https://shan-diego-2019.github.io/shirley-diego-project-4/" target="_blank">
+                                        <img src="/styles/assets/globe.svg" alt="View live page.">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery-item react" data-category="react">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/react-lukewarm-map.png" alt="See how users interact with a webpage with the lukewarm map app.">
+                                    <div class="img-overlay">
+                                        <p>Want to see how users interact with a webpage? Lukewarm shows information about what users do or don't do.</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>Lukewarm Map</p>
+                                    <p>React, Firebase</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>Want to see how users interact with a webpage? Lukewarm shows information about what users do or don't do.</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shirleywsywong/shirley-wong-project-5" target="_blank">
+                                        <img src="/styles/assets/github.svg" alt="View code on Github.">
+                                    </a>
+                                    <a href="https://shirleywsywong.github.io/shirley-wong-project-5/" target="_blank">
+                                        <img src="/styles/assets/globe.svg" alt="View live page.">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery-item react" data-category="react">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/react-ntcr.png" alt="A replicate of North Toronto Cat Rescue's website.">
+                                    <div class="img-overlay">
+                                        <p>A new coat of paint for my favorite cat shelter's website! Fully responsive and using live data from the PetFinder API.</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>North Toronto Cat Shelter</p>
+                                    <p>React, API</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>A new coat of paint for my favorite cat shelter's website! Fully responsive and using live data from the PetFinder API.</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shirleywsywong/javascript-project-2" target="_blank">
+                                        <img src="/styles/assets/github.svg" alt="View code on Github.">
+                                    </a>
+                                    <a href="https://shirleywsywong.github.io/javascript-project-2/" target="_blank">
+                                        <img src="/styles/assets/globe.svg" alt="View live page.">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery-item jquery" data-category="jquery">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/jquery-tic-tac-toe.png" alt="Tic-tac-toe, a classic game made for the modern browser.">
+                                    <div class="img-overlay">
+                                        <p>A classic game made for the modern browser. Play 1 or 2 players!</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>Tic-Tac-Toe</p>
+                                    <p>jQuery</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>A classic game made for the modern browser. Play 1 or 2 players!</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shirleywsywong/ShirleWongProjectThree" target="_blank">
+                                        <img src="/styles/assets/github.svg" alt="View code on Github.">
+                                    </a>
+                                    <a href="https://shirleywsywong.github.io/ShirleWongProjectThree/" target="_blank">
+                                        <img src="/styles/assets/globe.svg" alt="View live page.">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery-item psd" data-category="psd">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/psd-boat.png" alt="A PSD conversion for the Boad Ride Aventures website.">
+                                    <div class="img-overlay">
+                                        <p>Mobile first approach for a single page PSD conversion.</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>Boat Ride Aventures (PSD)</p>
+                                    <p>HTML5, CSS3</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>Mobile first approach for a single page PSD conversion.</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shirleywsywong/shirley-wong-project-1" target="_blank">
+                                        <img src="/styles/assets/github.svg" alt="View code on Github.">
+                                    </a>
+                                    <a href="https://shirleywsywong.github.io/shirley-wong-project-1/index.html" target="_blank">
+                                        <img src="/styles/assets/globe.svg" alt="View live page.">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery-item psd" data-category="psd">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/psd-electric.png" alt="A PSD conversion for the Electric Select website.">
+                                    <div class="img-overlay">
+                                        <p>Three page PSD conversion with mobile first approach.</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>Electric Select (PSD)</p>
+                                    <p>HTML5, CSS3</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>Three page PSD conversion with a mobile first approach.</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shirleywsywong/shirley-wong-project-2" target="_blank">
+                                        <img src="/styles/assets/github.svg" alt="View code on Github.">
+                                    </a>
+                                    <a href="https://shirleywsywong.github.io/shirley-wong-project-2/" target="_blank">
+                                        <img src="/styles/assets/globe.svg" alt="View live page.">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="about">
-            <h2>About Me</h2>
-            <p>I’m a front-end Developer based in Toronto. From my previous experience in an online marketing agency, combined
-                with a BBA degree in Marketing, I am passionate at creating user-centric web applications that are built to suit
-                the client’s target market.</p>
+            <div class="wrapper">
+                <h2>About Me</h2>
+                <p>I’m a front-end Developer based in Toronto. From my previous experience in an online marketing agency, combined
+                    with a BBA degree in Marketing, I am passionate at creating user-centric web applications that are built to suit
+                    the client’s target market.</p>
+            </div>
         </section>
         <section class="skills">
-            <h2>Skill set</h2>
-            <div class="skills-icons grid" data-aos="zoom-in">
+            <h2>Skill Set</h2>
+            <div class="skills-icons grid wrapper" data-aos="zoom-in">
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/react.svg" alt="">
+                        <img src="/styles/assets/react.svg" alt="React icon">
                     </figure>
                     <figcaption>
                         <p>react</p>
@@ -139,7 +212,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/firebase.svg" alt="">
+                        <img src="/styles/assets/firebase.svg" alt="Firebase icon">
                     </figure>
                     <figcaption>
                         <p>firebase</p>
@@ -147,7 +220,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/javascript.svg" alt="">
+                        <img src="/styles/assets/javascript.svg" alt="Javascript icon">
                     </figure>
                     <figcaption>
                         <p>javascript</p>
@@ -155,7 +228,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/jquery.svg" alt="">
+                        <img src="/styles/assets/jquery.svg" alt="jQuery icon">
                     </figure>
                     <figcaption>
                         <p>jquery</p>
@@ -163,7 +236,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/html5.svg" alt="">
+                        <img src="/styles/assets/html5.svg" alt="HTML icon">
                     </figure>
                     <figcaption>
                         <p>html</p>
@@ -171,7 +244,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/css3.svg" alt="">
+                        <img src="/styles/assets/css3.svg" alt="CSS icon">
                     </figure>
                     <figcaption>
                         <p>css</p>
@@ -179,7 +252,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/sass.svg" alt="">
+                        <img src="/styles/assets/sass.svg" alt="SCSS icon">
                     </figure>
                     <figcaption>
                         <p>scss</p>
@@ -187,7 +260,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/responsive.svg" alt="">
+                        <img src="/styles/assets/responsive.svg" alt="Responsive design icon">
                     </figure>
                     <figcaption>
                         <p>responsive</p>
@@ -195,7 +268,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/accessibility.svg" alt="">
+                        <img src="/styles/assets/accessibility.svg" alt="accessibility icon">
                     </figure>
                     <figcaption>
                         <p>accessibility</p>
@@ -203,7 +276,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/github.svg" alt="">
+                        <img src="/styles/assets/github.svg" alt="github icon">
                     </figure>
                     <figcaption>
                         <p>github</p>
@@ -211,7 +284,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/bar-chart.svg" alt="">
+                        <img src="/styles/assets/bar-chart.svg" alt="SEO bar chart icon">
                     </figure>
                     <figcaption>
                         <p>SEO</p>
@@ -219,7 +292,7 @@
                 </div>
                 <div class="icon">
                     <figure>
-                        <img src="/styles/assets/wordpress.svg" alt="">
+                        <img src="/styles/assets/wordpress.svg" alt="wordpress icon">
                     </figure>
                     <figcaption>
                         <p>wordpress</p>
@@ -227,12 +300,10 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Contact me</h2>
-            <form action=""></form>
-        </section>
+        <footer>
+            <p>Shirley Wong © 2019</p>
+        </footer>
     </main>
-    <script src="/scripts/isotope.pkgd.min.js"></script>
     <script src="/scripts/aos.js"></script>
     <script src="/scripts/index.js"></script>
 </body>
