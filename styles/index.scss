@@ -1,6 +1,7 @@
 @import './components/setup';
 @import './components/global';
 @import './components/header';
+@import './components/form';
 
 // ----------works section----------
 //gallery part
@@ -11,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 40px;
     @include max768 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -31,13 +32,25 @@
         height: 40px;
         display: flex;
         justify-content: space-evenly;
+        @include max940 {
+            flex-direction: column;
+            align-items: center;
+            height: 80px;
+        }
         a {
-            width: 50px;
-            height: 50px;
+            width: 80px;
+            background: $blue;
+            color: $white;
             text-align: center;
-            border-radius: 50%;
+            padding: 5px;
+            box-shadow: 1px 2px 5px rgba(0,0,0,.10);
+            transition: all .2s linear;
             &:hover {
-                background: $blue;
+                background: $white;
+                color: $blue
+            }
+            @include max940 {
+                margin: 10px 0;
             }
         }
         img {
@@ -47,13 +60,23 @@
     }
 }
 .gallery-item-frame {
-    padding: 15px;
+    padding: 30px;
+    height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .gallery-title {
     text-align: center;
     p:first-child {
         font-weight: bold;
+    }
+    a {
+        color: $dark-blue;
+        &:hover {
+            color: $purple;
+        }
     }
 }
 .gallery-content {
@@ -74,7 +97,7 @@
     left: 0;
     width: 100%;
     height: calc(100% - 5px);
-    background: linear-gradient(180deg,#002053ff, #002053dd);
+    background: linear-gradient(180deg,#3B3B6Dff, #444484cc);
     opacity: 0;
     transition: opacity .2s linear;
     @include max768 {
@@ -113,7 +136,7 @@ figure {
 }
 // ----------footer section----------
 footer {
-    background: $indigo;
+    background-image: url(../styles/assets/header.png);
     color: $white;
     padding: 10px;
     text-align: center;

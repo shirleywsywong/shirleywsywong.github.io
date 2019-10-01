@@ -33,17 +33,11 @@ body {
     font-family: 'Dosis', sans-serif;
 }
 .wrapper {
-    width: 80%;
+    width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    @include max940 {
-        width: 85%;
-    }
-    @include max768 {
-        width: 90%;
-    }
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 h2 {
     margin: 0;
@@ -66,4 +60,13 @@ li {
 }
 a {
     text-decoration: none;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
