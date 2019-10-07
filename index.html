@@ -31,15 +31,20 @@
     <main>
         <section class="works">
             <div class="wrapper">
-                <!-- <h2>projects</h2>
-                <nav>
-                    <ul class="button-group" id="project-filter">
-                        <li><button class="button is-checked" data-filter="*">View all</button></li>
-                        <li><button class="button" data-filter=".react">React</button></li>
-                        <li><button class="button" data-filter=".jquery">JQuery</button></li>
-                        <li><button class="button" data-filter=".psd">HTML/CSS</button></li>
-                    </ul>
-                </nav> -->
+                <h2>projects</h2>
+                <fieldset id="project-filter">
+                    <input type="radio" name="project" value="all-filter" id="all-filter" data-filter="all" checked>
+                    <label for ="all-filter">View All</label>
+
+                    <input type="radio" name="project" value="react-filter" id="react-filter" data-filter="react">
+                    <label for ="react-filter">React</label>
+
+                    <input type="radio" name="project" value="jQuery-filter" id="jQuery-filter" data-filter="jQuery">
+                    <label for ="jQuery-filter">jQuery</label>
+
+                    <input type="radio" name="project" value="psd-filter" id="psd-filter" data-filter="psd">
+                    <label for ="psd-filter">HTML/CSS</label>
+                </fieldset>
                 <div class="gallery-section">
                     <ul class="gallery">
                         <li class="gallery-item jquery" data-category="jquery">
@@ -333,6 +338,6 @@
         </footer>
     </main>
     <script src="/scripts/aos.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
