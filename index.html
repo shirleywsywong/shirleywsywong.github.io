@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Designed and developed by Shirley Wong">
+    <meta name="description" content="I’m a front-end developer based in Toronto with a passion for creating performant, data-driven web applications. Let's connect!">
+    <meta property="og:title" content="Shirley Wong | Front-end Developer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shirleywong.ca">
+    <meta property="og:image" content="https://shirleywong.ca/styles/assets/ogcard.png">
+    <meta property="og:image:alt" content="Hi, I'm Shirley. I'm a front-end developer. Let's connect!">
+    <meta property="og:description" content="I’m a front-end developer based in Toronto with a passion for creating performant, data-driven web applications. Let's connect!">
     <title>Shirley W.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="styles/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="styles/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="styles/assets/favicon-16x16.png">
+    <link rel="manifest" href="styles/assets/site.webmanifest">
     <link
         href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis|Source+Sans+Pro&display=swap"
         rel="stylesheet">
@@ -31,15 +43,20 @@
     <main>
         <section class="works">
             <div class="wrapper">
-                <!-- <h2>projects</h2>
-                <nav>
-                    <ul class="button-group" id="project-filter">
-                        <li><button class="button is-checked" data-filter="*">View all</button></li>
-                        <li><button class="button" data-filter=".react">React</button></li>
-                        <li><button class="button" data-filter=".jquery">JQuery</button></li>
-                        <li><button class="button" data-filter=".psd">HTML/CSS</button></li>
-                    </ul>
-                </nav> -->
+                <h2>projects</h2>
+                <fieldset id="project-filter">
+                    <input type="radio" name="project" value="all-filter" id="all-filter" data-filter="all" checked>
+                    <label for ="all-filter">View All</label>
+
+                    <input type="radio" name="project" value="react-filter" id="react-filter" data-filter="react">
+                    <label for ="react-filter">React</label>
+
+                    <input type="radio" name="project" value="jQuery-filter" id="jQuery-filter" data-filter="jQuery">
+                    <label for ="jQuery-filter">jQuery</label>
+
+                    <input type="radio" name="project" value="psd-filter" id="psd-filter" data-filter="psd">
+                    <label for ="psd-filter">HTML/CSS</label>
+                </fieldset>
                 <div class="gallery-section">
                     <ul class="gallery">
                         <li class="gallery-item jquery" data-category="jquery">
@@ -117,31 +134,6 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="gallery-item jquery" data-category="jquery">
-                            <div class="gallery-item-frame">
-                                <div class="gallery-image">
-                                    <img src="styles/assets/jquery-tic-tac-toe.png" alt="Tic-tac-toe, a classic game made for the modern browser.">
-                                    <div class="img-overlay">
-                                        <p>A classic game made for the modern browser. Play 1 or 2 players!</p>
-                                    </div>
-                                </div>
-                                <div class="gallery-title">
-                                    <p>Tic-Tac-Toe</p>
-                                    <p>jQuery</p>
-                                </div>
-                                <div class="gallery-content">
-                                    <p>A classic game made for the modern browser. Play 1 or 2 players!</p>
-                                </div>
-                                <div class="links">
-                                    <a href="https://github.com/shirleywsywong/tic-tac-toe" target="_blank">
-                                        GitHub
-                                    </a>
-                                    <a href="https://shirleywsywong.github.io/tic-tac-toe/" target="_blank">
-                                        Live
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
                         <li class="gallery-item psd" data-category="psd">
                             <div class="gallery-item-frame">
                                 <div class="gallery-image">
@@ -162,6 +154,31 @@
                                         GitHub
                                     </a>
                                     <a href="https://shirleywsywong.github.io/psd-float" target="_blank">
+                                        Live
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gallery-item jquery" data-category="jquery">
+                            <div class="gallery-item-frame">
+                                <div class="gallery-image">
+                                    <img src="styles/assets/jquery-tic-tac-toe.png" alt="Tic-tac-toe, a classic game made for the modern browser.">
+                                    <div class="img-overlay">
+                                        <p>A classic game made for the modern browser. Play 1 or 2 players!</p>
+                                    </div>
+                                </div>
+                                <div class="gallery-title">
+                                    <p>Tic-Tac-Toe</p>
+                                    <p>jQuery</p>
+                                </div>
+                                <div class="gallery-content">
+                                    <p>A classic game made for the modern browser. Play 1 or 2 players!</p>
+                                </div>
+                                <div class="links">
+                                    <a href="https://github.com/shirleywsywong/tic-tac-toe" target="_blank">
+                                        GitHub
+                                    </a>
+                                    <a href="https://shirleywsywong.github.io/tic-tac-toe/" target="_blank">
                                         Live
                                     </a>
                                 </div>
@@ -333,6 +350,6 @@
         </footer>
     </main>
     <script src="/scripts/aos.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
