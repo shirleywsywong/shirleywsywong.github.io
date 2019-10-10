@@ -537,8 +537,6 @@ fieldset label:hover::after {
   .gallery {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[3];
-        grid-template-rows: repeat(3, 1fr);
   }
 }
 
@@ -546,8 +544,6 @@ fieldset label:hover::after {
   .gallery {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
   }
 }
 
