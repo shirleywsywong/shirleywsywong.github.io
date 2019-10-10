@@ -4,14 +4,47 @@
 @import './components/form';
 
 // ----------works section----------
-//gallery part
+//project filter part
+fieldset {
+    border: none;
+    padding: 30px;
+    text-align: center;
+    input{
+        display: none;
+    }
+    label {
+        padding: 10px;
+        cursor: pointer;
+        display: inline-block;
+        color: $dark-blue;
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color:transparent;
+            transition: all .2s linear;
+        }
+        &:hover::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color:$indigo;
+            animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+    }
+}
+
+
+//project gallery part
 .works {
     background: #eee;
 }
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: min-content;
     grid-gap: 40px;
     @include max768 {
         grid-template-columns: repeat(2, 1fr);
