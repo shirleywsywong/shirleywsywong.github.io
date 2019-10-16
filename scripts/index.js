@@ -14,7 +14,6 @@ app.projectFilter = () => {
 
     const selectedCategory = document.querySelector('input[name="project"]:checked')
     app.filterCat = selectedCategory.dataset.filter;
-    console.log(app.filterCat)
     
     app.selectProject();
 }
